@@ -8,6 +8,7 @@
     <title>Ivonin blog</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script defer src="{{ mix('js/app.js') }}"></script>
+    <script src="https://kit.fontawesome.com/6b159970d7.js" crossorigin="anonymous"></script>
 
 </head>
 <body>

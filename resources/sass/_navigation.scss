@@ -1,0 +1,62 @@
+.nav{
+    background-color: red;
+    padding: 0.5rem 0;
+    position: relative;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        margin: 1rem 2rem; 
+    }
+    &__logo{
+        font-size: $m;
+    }
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 40%;
+        font-size: $sm;
+        font-variant: all-small-caps;
+        
+        & p:hover{
+            color: rgb(63, 173, 118);
+            cursor: pointer;
+        }
+    }
+    .icon{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        height: 100%;
+        right: 1rem;
+
+        i {
+            cursor: pointer;
+            font-size: 24px;
+            transition: 0.8s ease all;
+        }
+        &__active{
+            transform: rotate(90deg);
+        }
+    }
+   
+    &__mobiledrop{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        top: 4rem;
+        right: 0;
+        font-size: $sm;
+        font-variant: all-small-caps;
+        background-color: white;
+
+        p {
+            padding-bottom: 1rem;
+            margin-left:  1rem;
+        }
+    }
+}
