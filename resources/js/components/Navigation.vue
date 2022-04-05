@@ -2,12 +2,12 @@
     <div class="nav">
         <div class="nav__wrap">
             <div>
-                <p class="nav__logo">IVONIN BLOG</p>
+                <p class="nav__logo">SLOBODNO VRIJEME</p>
             </div>
 
             <div v-show="!mobile" class="nav__links">
                 <p>Home</p>
-                <p>Postovi</p>
+                <p>Places</p>
                 <p>Search</p>
             </div>
 
@@ -17,7 +17,7 @@
             
             <div v-show="mobileNav" class="nav__mobiledrop">
                 <p>Home</p>
-                <p>Postovi</p>
+                <p>Places</p>
                 <p>Search</p>
             </div>
             
@@ -32,7 +32,7 @@ export default {
         return {
            mobile: null,
            mobileNav: null,
-           windowWidth: null, 
+           windowWidth: null,
         };
     },
     created() {

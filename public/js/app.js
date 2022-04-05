@@ -27954,7 +27954,7 @@ var render = function () {
         [
           _c("p", [_vm._v("Home")]),
           _vm._v(" "),
-          _c("p", [_vm._v("Postovi")]),
+          _c("p", [_vm._v("Places")]),
           _vm._v(" "),
           _c("p", [_vm._v("Search")]),
         ]
@@ -27992,7 +27992,7 @@ var render = function () {
         [
           _c("p", [_vm._v("Home")]),
           _vm._v(" "),
-          _c("p", [_vm._v("Postovi")]),
+          _c("p", [_vm._v("Places")]),
           _vm._v(" "),
           _c("p", [_vm._v("Search")]),
         ]
@@ -28006,7 +28006,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("p", { staticClass: "nav__logo" }, [_vm._v("IVONIN BLOG")]),
+      _c("p", { staticClass: "nav__logo" }, [_vm._v("SLOBODNO VRIJEME")]),
     ])
   },
 ]

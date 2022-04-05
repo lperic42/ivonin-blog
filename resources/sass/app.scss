@@ -14,8 +14,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: $font-nunito;
+    font-family: $font-source;
 }
 .app{
     min-height: 100vh;
+}
+.section-cover-img{
+    background-image: url(../img/cover-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 620px;
+    max-width: 100%;
+
+    @media only screen and (max-width: 640px) {
+			background: url(../img/cover-img-mob.jpg) no-repeat center bottom;
+			height: 100vw; /*mora biti kockica*/
+			background-size: 100%;
+	}
 }

@@ -1,27 +1,39 @@
 .nav{
-    background-color: red;
+    background-color: transparent;
     padding: 0.5rem 0;
     position: relative;
     &__wrap{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: white;
+        background-color: transparent;
         margin: 1rem 2rem; 
     }
     &__logo{
-        font-size: $m;
+        font-size: $l;
+        letter-spacing: 2px;
     }
     &__links{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-basis: 40%;
         font-size: $sm;
+        font-weight: 300;
         font-variant: all-small-caps;
+        letter-spacing: 2px;
+       
         
+        
+        & p{
+            padding-right: 5px;
+            border-right: 2px solid transparent;
+            transition: 0.2s all ease-in-out;
+        }
+
         & p:hover{
             color: rgb(63, 173, 118);
             cursor: pointer;
+            border-right:2px solid rgb(63, 173, 118);
         }
     }
     .icon{
@@ -48,7 +60,7 @@
         width: 100%;
         max-width: 300px;
         height: 100%;
-        top: 4rem;
+        top: 7rem;
         right: 0;
         font-size: $sm;
         font-variant: all-small-caps;

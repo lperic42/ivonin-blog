@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 .nav {
-  background-color: red;
+  background-color: transparent;
   padding: 0.5rem 0;
   position: relative;
 }
@@ -8,22 +8,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: transparent;
   margin: 1rem 2rem;
 }
 .nav__logo {
-  font-size: 30px;
+  font-size: 40px;
+  letter-spacing: 2px;
 }
 .nav__links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-basis: 40%;
   font-size: 25px;
+  font-weight: 300;
   font-variant: all-small-caps;
+  letter-spacing: 2px;
+}
+.nav__links p {
+  padding-right: 5px;
+  border-right: 2px solid transparent;
+  transition: 0.2s all ease-in-out;
 }
 .nav__links p:hover {
   color: rgb(63, 173, 118);
   cursor: pointer;
+  border-right: 2px solid rgb(63, 173, 118);
 }
 .nav .icon {
   display: flex;
@@ -47,7 +56,7 @@
   width: 100%;
   max-width: 300px;
   height: 100%;
-  top: 4rem;
+  top: 7rem;
   right: 0;
   font-size: 25px;
   font-variant: all-small-caps;
@@ -62,9 +71,26 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .app {
   min-height: 100vh;
+}
+
+.section-cover-img {
+  background-image: url(/images/cover-img.jpg?ab37a18ed4f2b8aa3e1f8c217aef6bc3);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 620px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 640px) {
+  .section-cover-img {
+    background: url(/images/cover-img-mob.jpg?565725d91839908debc04280c4894b1a) no-repeat center bottom;
+    height: 100vw;
+    /*mora biti kockica*/
+    background-size: 100%;
+  }
 }
