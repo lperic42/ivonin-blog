@@ -67,6 +67,25 @@
   margin-left: 1rem;
 }
 
+.section-about {
+  padding: 5rem;
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+}
+.section-about__wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.7px solid rgb(63, 173, 118);
+  padding-bottom: 3rem;
+}
+.section-about__text {
+  width: 60%;
+}
+.section-about__img img {
+  width: 300px;
+}
+
 * {
   padding: 0;
   margin: 0;

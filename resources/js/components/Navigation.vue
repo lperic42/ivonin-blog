@@ -14,13 +14,13 @@
             <div class="icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="fa-solid fa-bars" :class="{ 'icon__active' : mobileNav }"></i>
             </div>
-            
+
             <div v-show="mobileNav" class="nav__mobiledrop">
                 <p>Home</p>
                 <p>Places</p>
                 <p>Search</p>
             </div>
-            
+
         </div>
     </div>
 </template>

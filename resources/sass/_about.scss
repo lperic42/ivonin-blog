@@ -1,0 +1,21 @@
+.section-about{
+    padding: 5rem;
+    font-size: $m;
+    font-family: $font-nunito;
+    &__wrap{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: .7px solid $color-main;
+        padding-bottom: 3rem;
+    }
+    &__text{
+        width: 60%;
+    }
+    &__img {
+        img {
+            width: 300px;
+        }
+
+    }
+}

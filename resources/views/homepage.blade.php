@@ -13,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
     <script defer src="{{ mix('js/app.js') }}"></script>
     <script src="https://kit.fontawesome.com/6b159970d7.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <div id="app">
         <div class="section-cover-img">
             <navigation></navigation>
         </div>
+        <About></About>
     </div>
 </body>
 </html>

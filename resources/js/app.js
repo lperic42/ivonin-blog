@@ -20,6 +20,8 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('navigation', require('./components/Navigation.vue').default);
+Vue.component('about', require('./components/About.vue').default);
+
 
 
 /**
