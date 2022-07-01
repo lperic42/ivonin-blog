@@ -5355,6 +5355,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "navigation",
+  props: {
+    url: null
+  },
   data: function data() {
     return {
       mobile: null,
@@ -28260,7 +28263,7 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "section-about__img" }, [
-          _c("img", { attrs: { src: "/images/icon-travel-8.jpg", alt: "" } }),
+          _c("img", { attrs: { src: "/images/hiking.png", alt: "" } }),
         ]),
       ]),
       _vm._v(" "),
@@ -28344,7 +28347,9 @@ var render = function () {
         [
           _c("p", [_vm._v("Home")]),
           _vm._v(" "),
-          _c("p", [_vm._v("Places")]),
+          _c("a", { attrs: { href: this.url ? this.url : "#" } }, [
+            _vm._v("Places"),
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v("Search")]),
         ]
@@ -28382,7 +28387,9 @@ var render = function () {
         [
           _c("p", [_vm._v("Home")]),
           _vm._v(" "),
-          _c("p", [_vm._v("Places")]),
+          _c("a", { attrs: { href: this.url ? this.url : "#" } }, [
+            _vm._v("Places"),
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v("Search")]),
         ]
@@ -28427,7 +28434,7 @@ var render = function () {
     _vm._v(" "),
     _c("span", [_vm._v("15.5.2022")]),
     _vm._v(" "),
-    _c("p", [_vm._v(_vm._s(this.title ? this.title : "KLEK"))]),
+    _c("p", [_vm._v(_vm._s(this.title))]),
     _vm._v(" "),
     _c("div", { staticClass: "horizontal-line" }),
   ])

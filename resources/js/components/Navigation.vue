@@ -7,7 +7,7 @@
 
             <div v-show="!mobile" class="nav__links">
                 <p>Home</p>
-                <p>Places</p>
+                <a :href="this.url ? this.url : '#'">Places</a>
                 <p>Search</p>
             </div>
 
@@ -17,7 +17,7 @@
 
             <div v-show="mobileNav" class="nav__mobiledrop">
                 <p>Home</p>
-                <p>Places</p>
+                <a :href="this.url ? this.url : '#'">Places</a>
                 <p>Search</p>
             </div>
 
@@ -28,6 +28,9 @@
 <script>
 export default {
     name: "navigation",
+    props: {
+        url: null,
+    },
     data() {
         return {
            mobile: null,

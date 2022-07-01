@@ -7,7 +7,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
-        margin: 1rem 2rem; 
+        margin: 1rem 2rem;
     }
     &__logo{
         font-size: $l;
@@ -21,13 +21,27 @@
         font-weight: 300;
         font-variant: all-small-caps;
         letter-spacing: 2px;
-       
-        
-        
+
+
+
         & p{
             padding-right: 5px;
             border-right: 2px solid transparent;
             transition: 0.2s all ease-in-out;
+        }
+
+        & a {
+            text-decoration: none;
+            color: #000;
+            padding-right: 5px;
+            border-right: 2px solid transparent;
+            transition: 0.2s all ease-in-out;
+
+        }
+        & a:hover{
+            color: rgb(63, 173, 118);
+            cursor: pointer;
+            border-right:2px solid rgb(63, 173, 118);
         }
 
         & p:hover{
@@ -52,7 +66,7 @@
             transform: rotate(90deg);
         }
     }
-   
+
     &__mobiledrop{
         display: flex;
         flex-direction: column;

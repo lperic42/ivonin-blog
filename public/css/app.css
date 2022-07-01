@@ -29,6 +29,18 @@
   border-right: 2px solid transparent;
   transition: 0.2s all ease-in-out;
 }
+.nav__links a {
+  text-decoration: none;
+  color: #000;
+  padding-right: 5px;
+  border-right: 2px solid transparent;
+  transition: 0.2s all ease-in-out;
+}
+.nav__links a:hover {
+  color: rgb(63, 173, 118);
+  cursor: pointer;
+  border-right: 2px solid rgb(63, 173, 118);
+}
 .nav__links p:hover {
   color: rgb(63, 173, 118);
   cursor: pointer;

@@ -17,8 +17,9 @@ use App\Http\Controllers\BlogController;
 
 Route::get('/', [BlogController::class,'index']);
 
-// Single blog route - fix the uri later
-Route::get('/blog', [BlogController::class,'list']);
+// All blogs route - fix the uri later
+Route::get('/blog', [BlogController::class,'list'])->name('blogs.list');
+
 
 Route::get('/admin', function () {
     return view('create');

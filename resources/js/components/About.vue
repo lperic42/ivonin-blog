@@ -9,7 +9,7 @@
             </p>
         </div>
         <div class="section-about__img">
-            <img src="/images/icon-travel-8.jpg" alt="">
+            <img src="/images/hiking.png" alt="">
         </div>
     </div>
     <div class="horizontal-line"></div>

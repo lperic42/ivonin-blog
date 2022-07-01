@@ -16,18 +16,13 @@
 </head>
 <body>
     <div id="app">
-        <div class="section-cover-img">
-            <navigation url="{{ route('blogs.list') }}"></navigation>
-        </div>
-        <About></About>
-        <div class="posts-wrap">
-            <div class="posts">
-                @foreach($featuredBlogs as $blog)
-                    <Post title="{{ $blog->title }}"></Post>
-                @endforeach
-            </div>
-        </div>
-        <Foot></Foot>
+        <ul>
+        @foreach($blogs as $blog)
+            <li>
+                <a href="#">{{ $blog->title }}</a>
+            </li>
+        @endforeach
+        </ul>
     </div>
 </body>
 </html>
