@@ -15,19 +15,8 @@
     <script src="https://kit.fontawesome.com/6b159970d7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="app">
-        <div class="section-cover-img">
-            <navigation></navigation>
-        </div>
-        <About></About>
-        <div class="posts-wrap">
-            <div class="posts">
-                @foreach($blogs as $blog)
-                    <Post title="{{ $blog->title }}"></Post>
-                @endforeach
-            </div>
-        </div>
-        <Foot></Foot>
-    </div>
+<div id="app">
+    <h1>hello ivona</h1>
+</div>
 </body>
 </html>

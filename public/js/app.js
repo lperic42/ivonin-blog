@@ -5408,7 +5408,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Post"
+  name: "Post",
+  props: {
+    title: null
+  }
 });
 
 /***/ }),
@@ -28419,24 +28422,17 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("a", { staticClass: "post", attrs: { href: "#" } }, [
+    _c("img", { attrs: { src: "/images/post-idea.jpeg" } }),
+    _vm._v(" "),
+    _c("span", [_vm._v("15.5.2022")]),
+    _vm._v(" "),
+    _c("p", [_vm._v(_vm._s(this.title ? this.title : "KLEK"))]),
+    _vm._v(" "),
+    _c("div", { staticClass: "horizontal-line" }),
+  ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { staticClass: "post", attrs: { href: "#" } }, [
-      _c("img", { attrs: { src: "/images/post-idea.jpeg" } }),
-      _vm._v(" "),
-      _c("span", [_vm._v("15.5.2022")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("KLEK")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "horizontal-line" }),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
