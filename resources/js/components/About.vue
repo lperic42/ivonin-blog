@@ -11,7 +11,7 @@
             </p>
         </div>
         <div class="section-about__img">
-            <img src="/images/hiking.png" alt="">
+            <img src="/images/wildlife.png" alt="">
         </div>
     </div>
     <div class="horizontal-line"></div>

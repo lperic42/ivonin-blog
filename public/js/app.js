@@ -28278,7 +28278,7 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "section-about__img" }, [
-          _c("img", { attrs: { src: "/images/hiking.png", alt: "" } }),
+          _c("img", { attrs: { src: "/images/wildlife.png", alt: "" } }),
         ]),
       ]),
       _vm._v(" "),
