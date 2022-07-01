@@ -16,7 +16,9 @@
 </head>
 <body>
 <div id="app">
-    <h1>hello ivona</h1>
+    <h1>{{ $post->title }}</h1>
+    <img src="{{ $post->featured_image }}">
+    <div> {!! $post->body !!} </div>
 </div>
 </body>
 </html>

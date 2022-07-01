@@ -20,6 +20,9 @@ Route::get('/', [BlogController::class,'index']);
 // All blogs route - fix the uri later
 Route::get('/blog', [BlogController::class,'list'])->name('blogs.list');
 
+// Read blog uri
+Route::get('/blog/{slug}', [BlogController::class,'show'])->name('blogs.show');
+
 
 Route::get('/admin', function () {
     return view('create');
