@@ -3,9 +3,11 @@
     <div class="section-about__wrap">
         <div class="section-about__text">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsa maiores nulla perferendis quidem quo unde veniam.
-                Aperiam autem cumque, est facere iste, nihil officiis quasi quod reiciendis tempora veniam vero?
-                Accusamus animi consequuntur dolorum eum ipsum nam nihil, numquam officiis optio provident quasi quidem vero! Aliquid assumenda illo quae!
+                Kako biti manje turist?<br><br>
+                Društvene stranice vrve idiličnim fotografijama pitoresknih sela, kristalno čistog mora, beskrajnih pješčanih plaža,
+                modnih šešira, žarkih haljina i planina. No, pitanje je što je od toga stvarno?<br>Što kada turizam ugrožava opstanak
+                prirodne i kulturne baštine kraja, a lokalnom stanovništu život čini nepodnošljivim?
+                <br><br>Ovaj blog je moj kutak interneta u kojemu nastojim biti manje turist.
             </p>
         </div>
         <div class="section-about__img">

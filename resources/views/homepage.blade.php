@@ -23,7 +23,7 @@
         <div class="posts-wrap">
             <div class="posts">
                 @foreach($featuredBlogs as $blog)
-                    <Post title="{{ $blog->title }}"></Post>
+                    <Post url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
                 @endforeach
             </div>
         </div>

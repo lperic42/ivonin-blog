@@ -5286,6 +5286,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "About"
 });
@@ -5413,7 +5415,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Post",
   props: {
-    title: null
+    title: null,
+    url: null
   }
 });
 
@@ -28256,8 +28259,20 @@ var staticRenderFns = [
       _c("div", { staticClass: "section-about__wrap" }, [
         _c("div", { staticClass: "section-about__text" }, [
           _c("p", [
+            _vm._v("\n                Kako biti manje turist?"),
+            _c("br"),
+            _c("br"),
             _vm._v(
-              "\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsa maiores nulla perferendis quidem quo unde veniam.\n                Aperiam autem cumque, est facere iste, nihil officiis quasi quod reiciendis tempora veniam vero?\n                Accusamus animi consequuntur dolorum eum ipsum nam nihil, numquam officiis optio provident quasi quidem vero! Aliquid assumenda illo quae!\n            "
+              "\n                Društvene stranice vrve idiličnim fotografijama pitoresknih sela, kristalno čistog mora, beskrajnih pješčanih plaža,\n                modnih šešira, žarkih haljina i planina. No, pitanje je što je od toga stvarno?"
+            ),
+            _c("br"),
+            _vm._v(
+              "Što kada turizam ugrožava opstanak\n                prirodne i kulturne baštine kraja, a lokalnom stanovništu život čini nepodnošljivim?\n                "
+            ),
+            _c("br"),
+            _c("br"),
+            _vm._v(
+              "Ovaj blog je moj kutak interneta u kojemu nastojim biti manje turist.\n            "
             ),
           ]),
         ]),
@@ -28429,7 +28444,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("a", { staticClass: "post", attrs: { href: "#" } }, [
+  return _c("a", { staticClass: "post", attrs: { href: this.url } }, [
     _c("img", { attrs: { src: "/images/post-idea.jpeg" } }),
     _vm._v(" "),
     _c("span", [_vm._v("15.5.2022")]),

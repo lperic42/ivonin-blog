@@ -1,5 +1,5 @@
 <template>
-    <a href="#" class="post">
+    <a :href="this.url" class="post">
         <img src="/images/post-idea.jpeg">
         <span>15.5.2022</span>
         <p>{{ this.title }}</p>
@@ -12,6 +12,7 @@ export default {
     name: "Post",
     props: {
         title: null,
+        url: null,
     },
 }
 </script>
