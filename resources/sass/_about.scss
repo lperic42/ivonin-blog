@@ -2,7 +2,7 @@
     padding: 5rem 0;
     font-size: $m;
     font-family: $font-nunito;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 
     &__wrap{
@@ -28,7 +28,7 @@
 
     .horizontal-line {
         width: 120%;
-        background-color: $color-main;
+        background-color: $color-secondary;
         height: .7px;
         transform: translateX(-8%);
     }

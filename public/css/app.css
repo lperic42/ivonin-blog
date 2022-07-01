@@ -71,7 +71,7 @@
   padding: 5rem 0;
   font-size: 30px;
   font-family: "Nunito", sans-serif;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .section-about__wrap {
@@ -90,7 +90,7 @@
 }
 .section-about .horizontal-line {
   width: 120%;
-  background-color: rgb(63, 173, 118);
+  background-color: rgba(20, 35, 44, 0.91);
   height: 0.7px;
   transform: translateX(-8%);
 }
@@ -102,7 +102,7 @@
 .posts {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -144,6 +144,21 @@
   background-color: rgb(63, 173, 118);
   margin-top: 10px;
   transition: all ease-in-out 0.3s;
+}
+
+.footer-wrap {
+  width: 100vw;
+  background-color: rgba(20, 35, 44, 0.91);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wrap p {
+  font-size: 15px;
+  color: #fff;
+  margin-left: 2rem;
+  font-weight: 300;
 }
 
 * {

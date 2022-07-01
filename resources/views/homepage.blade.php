@@ -28,7 +28,7 @@
                 <Post></Post>
             </div>
         </div>
-
+        <Foot></Foot>
     </div>
 </body>
 </html>
