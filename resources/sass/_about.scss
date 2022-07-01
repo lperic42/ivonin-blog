@@ -1,13 +1,18 @@
 .section-about{
-    padding: 5rem;
+    padding: 5rem 0;
     font-size: $m;
     font-family: $font-nunito;
+    width: 1200px;
+    margin: 0 auto;
+
     &__wrap{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        border-bottom: .7px solid $color-main;
+        //border-bottom: .7px solid $color-main;
         padding-bottom: 3rem;
+
+
     }
     &__text{
         width: 60%;
@@ -19,5 +24,12 @@
             width: 300px;
         }
 
+    }
+
+    .horizontal-line {
+        width: 120%;
+        background-color: $color-main;
+        height: .7px;
+        transform: translateX(-8%);
     }
 }

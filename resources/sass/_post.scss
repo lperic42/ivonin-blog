@@ -1,0 +1,39 @@
+.posts-wrap{
+    padding: 2rem 0;
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+ .post {
+     flex-basis: 25%;
+     margin-bottom: 3rem;
+     text-align: center;
+
+     & img{
+         width: 350px;
+         height: 450px;
+
+     }
+
+     & span{
+         font-size: $s;
+         color: rgb(0, 0, 0);
+         font-variant: all-small-caps;
+         letter-spacing: 2px;
+     }
+
+     & p {
+         font-size: $m;
+         font-weight: 300;
+         font-variant: all-small-caps;
+         letter-spacing: 2px;
+         margin-top: -9px;
+     }
+ }
+

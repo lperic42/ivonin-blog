@@ -12,6 +12,7 @@
             <img src="/images/icon-travel-8.jpg" alt="">
         </div>
     </div>
+    <div class="horizontal-line"></div>
 
 
 </div>

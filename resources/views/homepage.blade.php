@@ -20,6 +20,14 @@
             <navigation></navigation>
         </div>
         <About></About>
+        <div class="posts-wrap">
+            <div class="posts">
+                <Post></Post>
+                <Post></Post>
+                <Post></Post>
+                <Post></Post>
+            </div>
+        </div>
     </div>
 </body>
 </html>

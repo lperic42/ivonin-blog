@@ -21,6 +21,7 @@ window.Vue = require('vue').default;
 
 Vue.component('navigation', require('./components/Navigation.vue').default);
 Vue.component('about', require('./components/About.vue').default);
+Vue.component('post', require('./components/Post.vue').default);
 
 
 
