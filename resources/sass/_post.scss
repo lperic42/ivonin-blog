@@ -14,18 +14,30 @@
      flex-basis: 25%;
      margin-bottom: 3rem;
      text-align: center;
+     text-decoration: none;
+     color: #000;
+     transition: all ease-in-out .3s;
+
+     &:hover {
+         opacity: .7;
+
+         .horizontal-line {
+             width: 100%;
+         }
+     }
 
      & img{
          width: 350px;
          height: 450px;
-
      }
+
 
      & span{
          font-size: $s;
          color: rgb(0, 0, 0);
          font-variant: all-small-caps;
          letter-spacing: 2px;
+
      }
 
      & p {
@@ -34,6 +46,14 @@
          font-variant: all-small-caps;
          letter-spacing: 2px;
          margin-top: -9px;
+     }
+
+     .horizontal-line {
+         width: 0;
+         height: 1px;
+         background-color: $color-main;
+         margin-top: 10px;
+         transition: all ease-in-out .3s;
      }
  }
 
