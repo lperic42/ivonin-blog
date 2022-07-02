@@ -12,6 +12,7 @@
     &__logo{
         font-size: $l;
         letter-spacing: 2px;
+        user-select: none;
     }
     &__links{
         display: flex;
