@@ -1,6 +1,6 @@
 .section-about{
-    padding: 5rem 0;
-    font-size: $m;
+    padding: 2rem 0 5rem 0;
+    font-size: $sm;
     font-family: $font-nunito;
     max-width: 1200px;
     margin: 0 auto;
@@ -9,10 +9,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        //border-bottom: .7px solid $color-main;
         padding-bottom: 3rem;
-
-
     }
     &__text{
         width: 60%;

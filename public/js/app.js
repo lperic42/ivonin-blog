@@ -28278,7 +28278,9 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "section-about__img" }, [
-          _c("img", { attrs: { src: "/images/wildlife.png", alt: "" } }),
+          _c("img", {
+            attrs: { src: "/images/wildlife-removebg.png", alt: "" },
+          }),
         ]),
       ]),
       _vm._v(" "),
@@ -28360,7 +28362,7 @@ var render = function () {
           staticClass: "nav__links",
         },
         [
-          _c("p", [_vm._v("Home")]),
+          _c("a", { attrs: { href: "/" } }, [_vm._v("Home")]),
           _vm._v(" "),
           _c("a", { attrs: { href: this.url ? this.url : "#" } }, [
             _vm._v("Places"),
@@ -28400,7 +28402,7 @@ var render = function () {
           staticClass: "nav__mobiledrop",
         },
         [
-          _c("p", [_vm._v("Home")]),
+          _c("a", { attrs: { href: "/" } }, [_vm._v("Home")]),
           _vm._v(" "),
           _c("a", { attrs: { href: this.url ? this.url : "#" } }, [
             _vm._v("Places"),

@@ -6,7 +6,7 @@
             </div>
 
             <div v-show="!mobile" class="nav__links">
-                <p>Home</p>
+                <a href="/">Home</a>
                 <a :href="this.url ? this.url : '#'">Places</a>
                 <p>Search</p>
             </div>
@@ -16,7 +16,7 @@
             </div>
 
             <div v-show="mobileNav" class="nav__mobiledrop">
-                <p>Home</p>
+                <a href="/">Home</a>
                 <a :href="this.url ? this.url : '#'">Places</a>
                 <p>Search</p>
             </div>
