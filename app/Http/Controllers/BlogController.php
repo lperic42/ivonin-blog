@@ -9,7 +9,7 @@ class BlogController extends Controller
 {
     public function index() {
         // TODO -- Limit to 6 blog posts
-        $featuredBlogs = WinkPost::all();
+        $featuredBlogs = WinkPost::live()->get();
 
         return view('homepage')->with([
             'featuredBlogs' => $featuredBlogs,
