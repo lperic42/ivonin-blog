@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap);
 .nav {
   background-color: transparent;
   padding: 0.5rem 0;
@@ -86,7 +86,7 @@
 .section-about {
   padding: 2rem 0 5rem 0;
   font-size: 25px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif !important;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -100,6 +100,9 @@
   width: 60%;
   font-weight: 200;
   line-height: 40px;
+}
+.section-about__text p {
+  font-family: "Nunito", sans-serif !important;
 }
 .section-about__img img {
   width: 450px;
