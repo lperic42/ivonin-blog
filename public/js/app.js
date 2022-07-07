@@ -28259,7 +28259,9 @@ var staticRenderFns = [
       _c("div", { staticClass: "section-about__wrap" }, [
         _c("div", { staticClass: "section-about__text" }, [
           _c("p", [
-            _vm._v("\n                Kako biti manje turist?"),
+            _c("span", { staticClass: "heading" }, [
+              _vm._v("Kako biti manje turist?"),
+            ]),
             _c("br"),
             _c("br"),
             _vm._v(

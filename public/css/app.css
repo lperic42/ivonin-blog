@@ -128,7 +128,7 @@
   padding: 2rem 0 5rem 0;
   font-size: 25px;
   font-family: "Nunito", sans-serif !important;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 .section-about__wrap {
@@ -136,12 +136,16 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 3rem;
+  margin: 0 35px;
 }
 .section-about__text {
   width: 60%;
   font-weight: 200;
   line-height: 40px;
   margin-left: 10px;
+}
+.section-about__text .heading {
+  font-weight: 500;
 }
 .section-about__text p {
   font-family: "Nunito", sans-serif;
@@ -156,6 +160,25 @@
   transform: translateX(-8%);
 }
 
+@media (max-width: 900px) {
+  .section-about__img img {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .section-about__text {
+    width: 100%;
+    font-weight: 200;
+    line-height: 40px;
+    margin-left: 10px;
+  }
+  .section-about__text p {
+    font-family: "Nunito", sans-serif;
+  }
+  .section-about__img {
+    display: none;
+  }
+}
 .posts-wrap {
   padding: 2rem 0;
 }

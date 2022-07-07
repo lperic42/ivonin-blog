@@ -2,7 +2,7 @@
     padding: 2rem 0 5rem 0;
     font-size: $sm;
     font-family: $font-main !important;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
 
     &__wrap{
@@ -10,12 +10,17 @@
         justify-content: space-between;
         align-items: center;
         padding-bottom: 3rem;
+        margin: 0 35px;
     }
     &__text{
         width: 60%;
         font-weight: 200;
         line-height: 40px;
         margin-left: 10px;
+
+        .heading {
+            font-weight: 500;
+        }
         p {
             font-family: $font-main;
         }
@@ -32,5 +37,32 @@
         background-color: $color-secondary;
         height: .7px;
         transform: translateX(-8%);
+    }
+}
+
+@media(max-width: 900px) {
+    .section-about {
+        &__img {
+            img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .section-about {
+        &__text{
+            width: 100%;
+            font-weight: 200;
+            line-height: 40px;
+            margin-left: 10px;
+            p {
+                font-family: $font-main;
+            }
+        }
+        &__img {
+            display: none;
+        }
     }
 }
