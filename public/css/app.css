@@ -14,6 +14,7 @@
 .nav__logo {
   font-size: 40px;
   letter-spacing: 2px;
+  margin-right: 35px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -68,21 +69,59 @@
 .nav__mobiledrop {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
   position: fixed;
   width: 100%;
   max-width: 300px;
-  height: 100%;
-  top: 7rem;
+  height: 10%;
+  margin-right: -100%;
+  top: 4.5rem;
   right: 0;
   font-size: 25px;
   font-variant: all-small-caps;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.76);
+  transition: all ease-in-out 0.5s;
 }
-.nav__mobiledrop p {
+.nav__mobiledrop a {
+  text-decoration: none;
+  color: rgb(63, 173, 118);
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+}
+.nav__mobiledrop--active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px 0 0 10px;
+  position: fixed;
+  width: 100%;
+  max-width: 300px;
+  height: 50%;
+  top: 4.5rem;
+  right: 0;
+  font-size: 25px;
+  font-variant: all-small-caps;
+  background-color: rgba(255, 255, 255, 0.76);
+  transition: all ease-in-out 0.5s;
+}
+.nav__mobiledrop--active a {
+  text-decoration: none;
+  color: rgb(63, 173, 118);
   padding-bottom: 1rem;
   margin-left: 1rem;
 }
 
+@media (max-width: 476px) {
+  .nav__wrap {
+    align-items: flex-end;
+  }
+  .nav__wrap .nav__logo {
+    margin: 0;
+  }
+}
 .section-about {
   padding: 2rem 0 5rem 0;
   font-size: 25px;

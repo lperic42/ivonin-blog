@@ -15,10 +15,10 @@
                 <i @click="toggleMobileNav" v-show="mobile" class="fa-solid fa-bars" :class="{ 'icon__active' : mobileNav }"></i>
             </div>
 
-            <div v-show="mobileNav" class="nav__mobiledrop">
+            <div :class="mobileNav ? 'nav__mobiledrop--active' : 'nav__mobiledrop'" class="">
                 <a href="/">Home</a>
                 <a :href="this.url ? this.url : '#'">Places</a>
-                <p>Search</p>
+                <a href="#">Search</a>
             </div>
 
         </div>
@@ -34,7 +34,7 @@ export default {
     data() {
         return {
            mobile: null,
-           mobileNav: null,
+           mobileNav: false,
            windowWidth: null,
         };
     },

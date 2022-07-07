@@ -12,6 +12,7 @@
     &__logo{
         font-size: $l;
         letter-spacing: 2px;
+        margin-right: 35px;
         user-select: none;
     }
     &__links{
@@ -71,19 +72,63 @@
     &__mobiledrop{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
         position: fixed;
         width: 100%;
         max-width: 300px;
-        height: 100%;
-        top: 7rem;
+        height: 10%;
+        margin-right: -100%;
+        top: 4.5rem;
         right: 0;
         font-size: $sm;
         font-variant: all-small-caps;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.76);
+        transition: all ease-in-out .5s;
 
-        p {
+        a {
+            text-decoration: none;
+            color: $color-main;
+            padding-bottom: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__mobiledrop--active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px 0 0 10px;
+        position: fixed;
+        width: 100%;
+        max-width: 300px;
+        height: 50%;
+        top: 4.5rem;
+        right: 0;
+        font-size: $sm;
+        font-variant: all-small-caps;
+        background-color: rgba(255, 255, 255, 0.76);
+        transition: all ease-in-out .5s;
+
+        a {
+            text-decoration: none;
+            color: $color-main;
             padding-bottom: 1rem;
             margin-left:  1rem;
+        }
+    }
+}
+
+@media(max-width: 476px) {
+    .nav {
+        &__wrap {
+            align-items: flex-end;
+
+            .nav__logo {
+                margin: 0;
+            }
         }
     }
 }

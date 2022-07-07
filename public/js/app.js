@@ -5363,7 +5363,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       mobile: null,
-      mobileNav: null,
+      mobileNav: false,
       windowWidth: null
     };
   },
@@ -28391,15 +28391,7 @@ var render = function () {
       _c(
         "div",
         {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.mobileNav,
-              expression: "mobileNav",
-            },
-          ],
-          staticClass: "nav__mobiledrop",
+          class: _vm.mobileNav ? "nav__mobiledrop--active" : "nav__mobiledrop",
         },
         [
           _c("a", { attrs: { href: "/" } }, [_vm._v("Home")]),
@@ -28408,7 +28400,7 @@ var render = function () {
             _vm._v("Places"),
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v("Search")]),
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Search")]),
         ]
       ),
     ]),
