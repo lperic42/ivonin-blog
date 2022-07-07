@@ -5412,6 +5412,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Post",
   props: {
@@ -28443,9 +28445,11 @@ var render = function () {
   return _c("a", { staticClass: "post", attrs: { href: this.url } }, [
     _c("img", { attrs: { src: "/images/post-idea.jpeg" } }),
     _vm._v(" "),
-    _c("span", [_vm._v("15.5.2022")]),
-    _vm._v(" "),
-    _c("p", [_vm._v(_vm._s(this.title))]),
+    _c("div", [
+      _c("span", [_vm._v("15.5.2022")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(_vm._s(this.title))]),
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "horizontal-line" }),
   ])

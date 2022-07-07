@@ -1,8 +1,10 @@
 <template>
     <a :href="this.url" class="post">
         <img src="/images/post-idea.jpeg">
-        <span>15.5.2022</span>
-        <p>{{ this.title }}</p>
+        <div>
+            <span>15.5.2022</span>
+            <p>{{ this.title }}</p>
+        </div>
         <div class="horizontal-line"></div>
     </a>
 </template>
