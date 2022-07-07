@@ -25,18 +25,7 @@
                 @foreach($featuredBlogs as $blog)
                     <Post url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
                 @endforeach
-                    @foreach($featuredBlogs as $blog)
-                        <Post url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
-                    @endforeach
-                    @foreach($featuredBlogs as $blog)
-                        <Post url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
-                    @endforeach
-                    @foreach($featuredBlogs as $blog)
-                        <Post url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
-                    @endforeach
-                    @foreach($featuredBlogs as $blog)
-                        <Post url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
-                    @endforeach
+
             </div>
         </div>
         <Foot></Foot>
