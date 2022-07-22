@@ -300,6 +300,49 @@
      object-fit: contain;
 }
 
+.all-posts {
+  width: 80%;
+  margin: 20px auto;
+  height: 65vh;
+}
+.all-posts h1 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+.all-posts ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.all-posts ul li {
+  margin-bottom: 20px;
+}
+.all-posts ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pagination-links {
+  max-width: 80%;
+  width: 30%;
+  margin: 100px auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagination-links a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 30px;
+  width: 200px;
+}
+.pagination-links .disabled {
+  color: #718096 !important;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 .footer-wrap {
   width: 100vw;
   background-color: rgba(20, 35, 44, 0.91);

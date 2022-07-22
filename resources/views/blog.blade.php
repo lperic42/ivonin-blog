@@ -16,13 +16,27 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-        @foreach($blogs as $blog)
-            <li>
-                <a href="/blog/{{ $blog->slug }}">{{ $blog->title }}</a>
-            </li>
-        @endforeach
-        </ul>
+        <div class="navigation-wrap">
+            <navigation></navigation>
+        </div>
+        <div class="all-posts">
+            <h1>Sva moja putovanja</h1>
+            <ul>
+                @foreach($blogs as $blog)
+                    <li>
+                        <a href="/blog/{{ $blog->slug }}">{{ $blog->created_at->format('d.m.y.') . ' - ' . $blog->title }}</a>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    @if($blogs->links())
+        <div class="pagination-links">
+            <a href="{{ $blogs->previousPageUrl() }}" class="{{ !$blogs->previousPageUrl() ? 'disabled' : '' }}">&larr; Prethodna stranica</a>
+            <a href="{{ $blogs->nextPageUrl() }}" class="{{ !$blogs->nextPageUrl() ? 'disabled' : '' }}">Sljedeća stranica &rarr;</a>
+        </div>
+    @endif
+        <Foot></Foot>
+
     </div>
 </body>
 </html>
