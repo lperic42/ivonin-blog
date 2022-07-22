@@ -16,9 +16,19 @@
 </head>
 <body>
 <div id="app">
-    <h1>{{ $post->title }}</h1>
-    <img src="{{ $post->featured_image }}">
-    <div> {!! $post->body !!} </div>
+    <div class="navigation-wrap">
+        <navigation url="{{ route('blogs.list') }}"></navigation>
+    </div>
+    <div class="single-post">
+        <div class="single-post--heading">
+            <h1>{{ $post->title }}</h1>
+            <img src="{{ $post->featured_image }}">
+        </div>
+        <div class="single-post--body">
+            <div> {!! $post->body !!} </div>
+        </div>
+    </div>
+    <Foot></Foot>
 </div>
 </body>
 </html>
