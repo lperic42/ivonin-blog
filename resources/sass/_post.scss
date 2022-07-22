@@ -1,7 +1,9 @@
-.posts-wrap{
-    padding: 2rem 0;
+.heading {
+    margin-bottom: 2rem;
+    font-family: $font-main;
+    text-align: center;
+    font-weight: 400;
 }
-
 .posts{
     display: flex;
     flex-wrap: wrap;
@@ -18,10 +20,6 @@
      transition: all ease-in-out .3s;
      &:hover {
          opacity: .7;
-
-         .horizontal-line {
-             width: 100%;
-         }
      }
 
      & img{
@@ -44,14 +42,6 @@
          font-variant: all-small-caps;
          letter-spacing: 2px;
          margin-top: -9px;
-     }
-
-     .horizontal-line {
-         width: 0;
-         height: 1px;
-         background-color: $color-main;
-         margin-top: 10px;
-         transition: all ease-in-out .3s;
      }
  }
 
