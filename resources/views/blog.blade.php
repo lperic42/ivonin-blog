@@ -17,7 +17,7 @@
 <body>
     <div id="app">
         <div class="navigation-wrap">
-            <navigation></navigation>
+            <navigation url="{{ route('blogs.list') }}" search-results-page="{{ route('blogs.search') }}"></navigation>
         </div>
         <div class="all-posts">
             <h1>Sva moja putovanja</h1>
