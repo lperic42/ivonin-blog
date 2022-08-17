@@ -11,14 +11,29 @@
     }
 
     ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 100%;
 
         li {
             margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             a {
                 text-decoration: none;
                 color: inherit;
+                width: 90%;
+                font-size: 18px;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $color-main;
+                }
             }
         }
     }

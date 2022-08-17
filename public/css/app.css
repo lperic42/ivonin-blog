@@ -316,15 +316,30 @@
   margin-bottom: 100px;
 }
 .all-posts ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 100%;
 }
 .all-posts ul li {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .all-posts ul li a {
   text-decoration: none;
   color: inherit;
+  width: 90%;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.all-posts ul li a:hover {
+  color: rgba(63, 173, 118, 0.6);
 }
 
 .pagination-links {
