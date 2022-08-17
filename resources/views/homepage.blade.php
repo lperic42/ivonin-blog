@@ -17,7 +17,7 @@
 <body>
     <div id="app">
         <div class="section-cover-img">
-            <navigation url="{{ route('blogs.list') }}"></navigation>
+            <navigation url="{{ route('blogs.list') }}" search-results-page="{{ route('blogs.search') }}"></navigation>
         </div>
         <About></About>
         <div class="posts-wrap">

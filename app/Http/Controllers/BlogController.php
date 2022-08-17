@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Wink;
+use Illuminate\Http\Request;
 use Wink\WinkPost;
 
 class BlogController extends Controller
@@ -34,5 +35,20 @@ class BlogController extends Controller
         return view('single-post', [
             'post' => $post
         ]);
+    }
+
+    public function search(Request $request){
+        // Get the search value from the request
+        $search = $request->input('search');
+
+        $blogs = WinkPost::with('tags')
+            ->live()
+            ->where('title', 'LIKE', "%{$search}%")
+            ->orWhere('body', 'LIKE', "%{$search}%")
+            ->orderBy('publish_date', 'DESC')
+            ->simplePaginate(12);
+
+        // Return the search view with the resluts compacted
+        return view('blog', compact('blogs'));
     }
 }

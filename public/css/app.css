@@ -12,6 +12,7 @@
   background-color: transparent;
   max-width: 1800px;
   margin: 1rem auto;
+  width: 100%;
 }
 .nav__logo {
   text-decoration: none;
@@ -91,7 +92,7 @@
 }
 .nav__mobiledrop a {
   text-decoration: none;
-  color: rgb(63, 173, 118);
+  color: rgba(63, 173, 118, 0.6);
   padding-bottom: 1rem;
   margin-left: 1rem;
 }
@@ -114,7 +115,7 @@
 }
 .nav__mobiledrop--active a {
   text-decoration: none;
-  color: rgb(63, 173, 118);
+  color: rgba(63, 173, 118, 0.6);
   padding-bottom: 1rem;
   margin-left: 1rem;
 }

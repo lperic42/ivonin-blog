@@ -8,31 +8,13 @@
             <div v-show="!mobile" class="nav__links">
                 <a href="/">Home</a>
                 <a :href="this.url ? this.url : '#'">Places</a>
-                <p>Search</p>
-                <a
-                    class="nav-link dropdown-toggle hidden-arrow btn btn-primary"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-mdb-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                    dropdown
-                </a>
-                <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
-                    <li>
-                        <div class="input-group mt-2 mx-2">
-                            <div class="form-outline">
-                                <input type="search" id="form1" class="form-control-dropdown" />
-                                <label class="form-label" for="form1">Search</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+<!--                <p>Search</p>-->
+                <form class="d-flex" :action="this.searchResultsPage">
+                    <input v-model="searchTerm" name="search"  class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit" class="btn btn-outline-success" style="display: flex;justify-content: center;align-items: center;">
+                        <i class="el-icon-search" style="width: 40px;"></i>
+                    </button>
+                </form>
             </div>
 
             <div class="icon">
@@ -54,12 +36,14 @@ export default {
     name: "navigation",
     props: {
         url: null,
+        searchResultsPage: null,
     },
     data() {
         return {
            mobile: null,
            mobileNav: false,
            windowWidth: null,
+           searchTerm: null,
         };
     },
     created() {
