@@ -1,6 +1,6 @@
 <template>
     <a :href="this.url" class="post">
-        <img src="/images/post-idea.jpeg">
+        <img :src="this.image">
         <div>
             <span>15.5.2022</span>
             <p>{{ this.title }}</p>
@@ -14,6 +14,7 @@ export default {
     props: {
         title: null,
         url: null,
+        image: null,
     },
 }
 </script>

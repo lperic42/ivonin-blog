@@ -24,7 +24,7 @@
             <h1 class="heading">Najnovija putovanja</h1>
             <div class="posts">
                 @foreach($featuredBlogs as $blog)
-                    <Post url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
+                    <Post image="{{ $blog->featured_image }}" url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
                 @endforeach
 
             </div>

@@ -5355,6 +5355,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "navigation",
   props: {
@@ -5417,7 +5441,8 @@ __webpack_require__.r(__webpack_exports__);
   name: "Post",
   props: {
     title: null,
-    url: null
+    url: null,
+    image: null
   }
 });
 
@@ -28372,6 +28397,24 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("p", [_vm._v("Search")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "nav-link dropdown-toggle hidden-arrow btn btn-primary",
+              attrs: {
+                href: "#",
+                id: "navbarDropdownMenuLink",
+                role: "button",
+                "data-mdb-toggle": "dropdown",
+                "aria-expanded": "false",
+              },
+            },
+            [_vm._v("\n                dropdown\n            ")]
+          ),
+          _vm._v(" "),
+          _vm._m(1),
         ]
       ),
       _vm._v(" "),
@@ -28415,8 +28458,60 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("p", { staticClass: "nav__logo" }, [_vm._v("SLOBODNO VRIJEME")]),
+      _c("a", { staticClass: "nav__logo", attrs: { href: "/" } }, [
+        _vm._v("SLOBODNO VRIJEME"),
+      ]),
     ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "ul",
+      {
+        staticClass: "dropdown-menu dropdown-menu-left",
+        attrs: { "aria-labelledby": "navbarDropdownMenuLink" },
+      },
+      [
+        _c("li", [
+          _c("div", { staticClass: "input-group mt-2 mx-2" }, [
+            _c("div", { staticClass: "form-outline" }, [
+              _c("input", {
+                staticClass: "form-control-dropdown",
+                attrs: { type: "search", id: "form1" },
+              }),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "form-label", attrs: { for: "form1" } },
+                [_vm._v("Search")]
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [_c("hr", { staticClass: "dropdown-divider" })]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+            _vm._v("Action"),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+            _vm._v("Another action"),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+            _vm._v("Something else here"),
+          ]),
+        ]),
+      ]
+    )
   },
 ]
 render._withStripped = true
@@ -28442,7 +28537,7 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("a", { staticClass: "post", attrs: { href: this.url } }, [
-    _c("img", { attrs: { src: "/images/post-idea.jpeg" } }),
+    _c("img", { attrs: { src: this.image } }),
     _vm._v(" "),
     _c("div", [
       _c("span", [_vm._v("15.5.2022")]),

@@ -11,6 +11,8 @@
         margin: 1rem auto;
     }
     &__logo{
+        text-decoration: none;
+        color: inherit;
         font-size: $l;
         letter-spacing: 2px;
         margin-right: 35px;
