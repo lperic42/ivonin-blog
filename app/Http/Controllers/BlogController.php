@@ -21,7 +21,7 @@ class BlogController extends Controller
         $blogs = WinkPost::with('tags')
             ->live()
             ->orderBy('publish_date', 'DESC')
-            ->simplePaginate(13);
+            ->simplePaginate(9);
 
         return view('blog')->with([
             'blogs' => $blogs,
@@ -39,14 +39,14 @@ class BlogController extends Controller
 
     public function search(Request $request){
         // Get the search value from the request
-        $search = $request->input('search');
+        $search = $request->input('query');
 
         $blogs = WinkPost::with('tags')
             ->live()
             ->where('title', 'LIKE', "%{$search}%")
             ->orWhere('body', 'LIKE', "%{$search}%")
             ->orderBy('publish_date', 'DESC')
-            ->simplePaginate(13);
+            ->simplePaginate(9);
 
         // Return the search view with the resluts compacted
         return view('blog', compact('blogs'));

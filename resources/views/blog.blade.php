@@ -19,22 +19,46 @@
         <div class="navigation-wrap">
             <navigation url="{{ route('blogs.list') }}" search-results-page="{{ route('blogs.search') }}"></navigation>
         </div>
-        <div class="all-posts">
-            <h1>Sva moja putovanja</h1>
-            <ul>
+        <div class="posts-wrap" style="min-height: 100vh; position: relative">
+            <h1 class="heading" style="margin: 150px">Sva moja putovanja</h1>
+            <div class="posts">
                 @foreach($blogs as $blog)
-                    <li>
-                        <a href="/blog/{{ $blog->slug }}">{{ $blog->created_at->format('d.m.y.') . ' - ' . $blog->title }}</a>
-                    </li>
+                    <Post image="{{ $blog->featured_image }}" url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
                 @endforeach
-            </ul>
+
+            </div>
+
+
+            @if($blogs->links())
+                <div class="pagination-links" style="position: absolute; bottom:10%; left: 35%;">
+                    <a href="{{ $blogs->previousPageUrl() }}" class="{{ !$blogs->previousPageUrl() ? 'disabled' : '' }}">&larr; Prethodna stranica</a>
+                    <a href="{{ $blogs->nextPageUrl() }}" class="{{ !$blogs->nextPageUrl() ? 'disabled' : '' }}">Sljedeća stranica &rarr;</a>
+                </div>
+            @endif
         </div>
-    @if($blogs->links())
-        <div class="pagination-links">
-            <a href="{{ $blogs->previousPageUrl() }}" class="{{ !$blogs->previousPageUrl() ? 'disabled' : '' }}">&larr; Prethodna stranica</a>
-            <a href="{{ $blogs->nextPageUrl() }}" class="{{ !$blogs->nextPageUrl() ? 'disabled' : '' }}">Sljedeća stranica &rarr;</a>
-        </div>
-    @endif
+
+
+{{--        <div class="all-posts">--}}
+{{--            <h1>Sva moja putovanja</h1>--}}
+{{--            @if(!empty($blogs))--}}
+{{--            <ul>--}}
+{{--                @foreach($blogs as $blog)--}}
+{{--                    <li>--}}
+{{--                        <a href="/blog/{{ $blog->slug }}">{{ $blog->created_at->format('d.m.y.') . ' - ' . $blog->title }}</a>--}}
+{{--                    </li>--}}
+{{--                @endforeach--}}
+{{--                    @foreach($blogs as $blog)--}}
+{{--                        <li>--}}
+{{--                            <Post image="{{ $blog->featured_image }}" url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>--}}
+{{--                        </li>--}}
+{{--                    @endforeach--}}
+
+{{--            </ul>--}}
+{{--            @else--}}
+{{--                <p>wow such empty</p>--}}
+{{--            @endif--}}
+{{--        </div>--}}
+
         <Foot></Foot>
 
     </div>

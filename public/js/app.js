@@ -92471,7 +92471,7 @@ var render = function () {
                 ],
                 staticClass: "form-control mr-2",
                 attrs: {
-                  name: "search",
+                  name: "query",
                   type: "search",
                   placeholder: "Search",
                   "aria-label": "Search",

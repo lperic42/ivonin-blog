@@ -10,7 +10,7 @@
                 <a :href="this.url ? this.url : '#'">Places</a>
 <!--                <p>Search</p>-->
                 <form class="d-flex" :action="this.searchResultsPage">
-                    <input v-model="searchTerm" name="search"  class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <input v-model="searchTerm" name="query"  class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
                     <button type="submit" class="btn btn-outline-success" style="display: flex;justify-content: center;align-items: center;">
                         <i class="el-icon-search" style="width: 40px;"></i>
                     </button>
