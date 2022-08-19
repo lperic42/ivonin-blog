@@ -20,7 +20,7 @@
             <navigation url="{{ route('blogs.list') }}" search-results-page="{{ route('blogs.search') }}"></navigation>
         </div>
         <div class="posts-wrap" style="min-height: 100vh; position: relative">
-            <h1 class="heading" style="margin: 150px">Sva moja putovanja</h1>
+            <h1 class="heading" style="margin: 70px 0 150px 0">Sva moja putovanja</h1>
             <div class="posts">
                 @foreach($blogs as $blog)
                     <Post image="{{ $blog->featured_image }}" url="{{ route('blogs.show', ['slug' => $blog->slug]) }}" title="{{ $blog->title }}"></Post>
@@ -30,7 +30,7 @@
 
 
             @if($blogs->links())
-                <div class="pagination-links" style="position: absolute; bottom:10%; left: 35%;">
+                <div class="pagination-links">
                     <a href="{{ $blogs->previousPageUrl() }}" class="{{ !$blogs->previousPageUrl() ? 'disabled' : '' }}">&larr; Prethodna stranica</a>
                     <a href="{{ $blogs->nextPageUrl() }}" class="{{ !$blogs->nextPageUrl() ? 'disabled' : '' }}">Sljedeća stranica &rarr;</a>
                 </div>
