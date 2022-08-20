@@ -21,11 +21,11 @@
     </div>
     <div class="single-post">
         <div class="single-post--heading">
-            <h1>{{ $post->title }}</h1>
+            <h1 style="overflow: hidden">{{ $post->title }}</h1>
             <img src="{{ $post->featured_image }}">
         </div>
         <div class="single-post--body">
-            <div> {!! $post->body !!} </div>
+            <div style="width: 80%; margin: 0 auto"> {!! $post->body !!} </div>
         </div>
     </div>
     <Foot></Foot>
