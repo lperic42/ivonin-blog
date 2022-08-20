@@ -42,7 +42,7 @@ export default {
     data() {
         return {
            mobile: null,
-           mobileNav: false,
+           mobileNav: true,
            windowWidth: null,
            searchTerm: null,
            state: false,

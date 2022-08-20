@@ -7040,7 +7040,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       mobile: null,
-      mobileNav: false,
+      mobileNav: true,
       windowWidth: null,
       searchTerm: null,
       state: false
