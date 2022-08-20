@@ -47,7 +47,7 @@ export default {
     data() {
         return {
            mobile: null,
-           mobileNav: true,
+           mobileNav: false,
            windowWidth: null,
            searchTerm: null,
            state: false,
