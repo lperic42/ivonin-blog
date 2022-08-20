@@ -23,9 +23,14 @@
             </div>
 
             <div :class="mobileNav ? 'nav__mobiledrop--active' : 'nav__mobiledrop'" class="">
+                <form class="d-flex" :action="this.searchResultsPage" style="margin-left: 10px;">
+                    <div class="search-box-mobile">
+                        <button class="btn-search-mobile" ><i class="fas fa-search"></i></button>
+                        <input  v-model="searchTerm" name="query" type="text" class="input-search-mobile" placeholder="Type to Search...">
+                    </div>
+                </form>
                 <a href="/">Home</a>
                 <a :href="this.url ? this.url : '#'">Places</a>
-                <a href="#">Search</a>
             </div>
 
         </div>

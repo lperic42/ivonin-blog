@@ -7031,6 +7031,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "navigation",
   props: {
@@ -92545,13 +92550,51 @@ var render = function () {
           class: _vm.mobileNav ? "nav__mobiledrop--active" : "nav__mobiledrop",
         },
         [
+          _c(
+            "form",
+            {
+              staticClass: "d-flex",
+              staticStyle: { "margin-left": "10px" },
+              attrs: { action: this.searchResultsPage },
+            },
+            [
+              _c("div", { staticClass: "search-box-mobile" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.searchTerm,
+                      expression: "searchTerm",
+                    },
+                  ],
+                  staticClass: "input-search-mobile",
+                  attrs: {
+                    name: "query",
+                    type: "text",
+                    placeholder: "Type to Search...",
+                  },
+                  domProps: { value: _vm.searchTerm },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.searchTerm = $event.target.value
+                    },
+                  },
+                }),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
           _c("a", { attrs: { href: "/" } }, [_vm._v("Home")]),
           _vm._v(" "),
           _c("a", { attrs: { href: this.url ? this.url : "#" } }, [
             _vm._v("Places"),
           ]),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "#" } }, [_vm._v("Search")]),
         ]
       ),
     ]),
@@ -92573,6 +92616,14 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("button", { staticClass: "btn-search" }, [
+      _c("i", { staticClass: "fas fa-search" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("button", { staticClass: "btn-search-mobile" }, [
       _c("i", { staticClass: "fas fa-search" }),
     ])
   },
