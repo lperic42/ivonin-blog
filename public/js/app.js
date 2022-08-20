@@ -7030,6 +7030,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "navigation",
   props: {
@@ -7041,7 +7042,8 @@ __webpack_require__.r(__webpack_exports__);
       mobile: null,
       mobileNav: false,
       windowWidth: null,
-      searchTerm: null
+      searchTerm: null,
+      state: false
     };
   },
   created: function created() {
@@ -7063,6 +7065,10 @@ __webpack_require__.r(__webpack_exports__);
       this.mobile = false;
       this.mobileNav = false;
       return;
+    },
+    setNavState: function setNavState(newState) {
+      this.state = newState;
+      console.log(this.state);
     }
   }
 });
@@ -92403,7 +92409,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "footer-wrap" }, [
-      _c("p", [_vm._v("ivona.coric@gmail.com")]),
+      _c("p", { staticClass: "footer-email" }, [
+        _vm._v("ivona.coric@gmail.com"),
+      ]),
     ])
   },
 ]
@@ -92447,47 +92455,69 @@ var render = function () {
           staticClass: "nav__links",
         },
         [
-          _c("a", { attrs: { href: "/" } }, [_vm._v("Home")]),
+          _c(
+            "a",
+            {
+              class: this.state == true ? "hidden" : "active",
+              attrs: { href: "/" },
+            },
+            [_vm._v("Home")]
+          ),
           _vm._v(" "),
-          _c("a", { attrs: { href: this.url ? this.url : "#" } }, [
-            _vm._v("Places"),
-          ]),
+          _c(
+            "a",
+            {
+              class: this.state == true ? "hidden" : "active",
+              attrs: { href: this.url ? this.url : "#" },
+            },
+            [_vm._v("Places")]
+          ),
           _vm._v(" "),
           _c(
             "form",
             {
               staticClass: "d-flex",
+              staticStyle: { "margin-left": "10px" },
               attrs: { action: this.searchResultsPage },
+              on: {
+                click: function ($event) {
+                  return _vm.setNavState(true)
+                },
+                focusout: function ($event) {
+                  return _vm.setNavState(false)
+                },
+              },
             },
             [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.searchTerm,
-                    expression: "searchTerm",
+              _c("div", { staticClass: "search-box" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.searchTerm,
+                      expression: "searchTerm",
+                    },
+                  ],
+                  staticClass: "input-search",
+                  attrs: {
+                    name: "query",
+                    type: "text",
+                    placeholder: "Type to Search...",
                   },
-                ],
-                staticClass: "form-control mr-2",
-                attrs: {
-                  name: "query",
-                  type: "search",
-                  placeholder: "Search",
-                  "aria-label": "Search",
-                },
-                domProps: { value: _vm.searchTerm },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.searchTerm = $event.target.value
+                  domProps: { value: _vm.searchTerm },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.searchTerm = $event.target.value
+                    },
                   },
-                },
-              }),
-              _vm._v(" "),
-              _vm._m(1),
+                }),
+              ]),
             ]
           ),
         ]
@@ -92542,24 +92572,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass: "btn btn-outline-success",
-        staticStyle: {
-          display: "flex",
-          "justify-content": "center",
-          "align-items": "center",
-        },
-        attrs: { type: "submit" },
-      },
-      [
-        _c("i", {
-          staticClass: "el-icon-search",
-          staticStyle: { width: "40px" },
-        }),
-      ]
-    )
+    return _c("button", { staticClass: "btn-search" }, [
+      _c("i", { staticClass: "fas fa-search" }),
+    ])
   },
 ]
 render._withStripped = true

@@ -31,8 +31,8 @@
 
             @if($blogs->links())
                 <div class="pagination-links">
-                    <a href="{{ $blogs->previousPageUrl() }}" class="{{ !$blogs->previousPageUrl() ? 'disabled' : '' }}">&larr; Prethodna stranica</a>
-                    <a href="{{ $blogs->nextPageUrl() }}" class="{{ !$blogs->nextPageUrl() ? 'disabled' : '' }}">Sljedeća stranica &rarr;</a>
+                    <a href="{{ $blogs->previousPageUrl() }}" class="{{ !$blogs->previousPageUrl() ? 'disabled' : '' }}">&larr; Prethodna</a>
+                    <a href="{{ $blogs->nextPageUrl() }}" class="{{ !$blogs->nextPageUrl() ? 'disabled' : '' }}">Sljedeća &rarr;</a>
                 </div>
             @endif
         </div>

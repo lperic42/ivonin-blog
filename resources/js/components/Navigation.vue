@@ -6,14 +6,15 @@
             </div>
 
             <div v-show="!mobile" class="nav__links">
-                <a href="/">Home</a>
-                <a :href="this.url ? this.url : '#'">Places</a>
+                <a href="/" :class="this.state == true ? 'hidden' : 'active'">Home</a>
+                <a :href="this.url ? this.url : '#'" :class="this.state == true ? 'hidden' : 'active'">Places</a>
 <!--                <p>Search</p>-->
-                <form class="d-flex" :action="this.searchResultsPage">
-                    <input v-model="searchTerm" name="query"  class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                    <button type="submit" class="btn btn-outline-success" style="display: flex;justify-content: center;align-items: center;">
-                        <i class="el-icon-search" style="width: 40px;"></i>
-                    </button>
+
+                <form class="d-flex" :action="this.searchResultsPage" style="margin-left: 10px;"  @click="setNavState(true)"  @focusout="setNavState(false)">
+                    <div class="search-box">
+                        <button class="btn-search" ><i class="fas fa-search"></i></button>
+                        <input  v-model="searchTerm" name="query" type="text" class="input-search" placeholder="Type to Search...">
+                    </div>
                 </form>
             </div>
 
@@ -44,6 +45,7 @@ export default {
            mobileNav: false,
            windowWidth: null,
            searchTerm: null,
+           state: false,
         };
     },
     created() {
@@ -65,6 +67,11 @@ export default {
             this.mobileNav = false;
             return;
         },
+
+        setNavState(newState) {
+            this.state = newState;
+            console.log(this.state);
+        }
     },
 };
 </script>

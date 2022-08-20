@@ -1,6 +1,6 @@
 <template>
 <div class="footer-wrap">
-    <p>ivona.coric@gmail.com</p>
+    <p class="footer-email">ivona.coric@gmail.com</p>
 </div>
 </template>
 
